@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador LUAN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Flockey&family=Poppins:wght@800&display=swap">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+</head>
+<body>
+    <div class="search-container">
+        <div class="logo">LUAN</div>
+        <form action="/search" method="post" class="search-box">
+            <input type="text" placeholder="Search..." name="search_term">
+            <button type="submit">
+                <img src="static/assets/search-icon.png" alt="Search">
+            </button>
+        </form>
+    </div>
+</body>
+</html>
